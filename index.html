@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="makeCall()">Make a Call</button>
+</body>
+
+<script>
+    async function makeCall(){
+        alert(1);
+        const response = await fetch("https://7543-2405-201-e00d-7006-4cb-44f1-d9d5-4671.in.ngrok.io/forgeapp/webhook", {
+            method: "POST",
+            body: JSON.stringify({"value": "local"})
+            // mode: "cors",
+        });
+    }
+</script>
+</html>
