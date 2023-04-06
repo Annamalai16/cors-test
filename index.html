@@ -13,7 +13,7 @@
 <script>
     async function makeCall(){
         alert(1);
-        const response = await fetch("https://7543-2405-201-e00d-7006-4cb-44f1-d9d5-4671.in.ngrok.io/forgeapp/webhook", {
+        const response = await fetch("http://localhost:9090/forgeapp/webhook", {
             method: "POST",
             body: JSON.stringify({"value": "local"})
             // mode: "cors",
